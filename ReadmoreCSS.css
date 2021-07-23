@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding:0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(189, 188, 188);
+    padding:0 50px;
+}
+
+.small_div{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    height: auto;
+}
+
+.small_div-1{
+    width: auto;
+    margin-right: 5px;
+    height: 100%;
+    padding: 50px 0px;
+}
+
+.small_div-1 p{
+    color: rgb(70, 70, 70);
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+.top_name{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.small_div-2{
+    margin: 0;
+    width: auto;
+    padding: 20px 0px;
+    height: 100%;
+}
+
+.image{
+    width: 100%;
+    height:300px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#like_button {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#dislike_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.like-dislike{
+    display: flex;
+    flex-direction: row;
+}
+
+.big_div{
+    width: 85%;
+    height: auto;
+    margin: 70px auto;
+}
+
+.big_div p{
+    color: rgb(70, 70, 70);
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 25px auto;
+}
+
+@media(max-width:1010px){
+    .small_div{
+        flex-direction: column-reverse;
+    }
+    .small_div-1{
+        padding: 20px 0px;
+    }
+    .small_div-1 p{
+        margin: 25px auto !important;
+    }
+    .big_div{
+        margin: 50px auto;
+    }
+}
+
+@media (max-width:540px){
+    body{
+        padding: 0 10px;
+    }
+    .small_div, .big_div{
+        width: 90%;
+    }
+    .small_div-1,.small_div-2{
+        padding: 0px;
+    }
+    .small_div-1 p{
+        font-size: 16px;
+    }
+    .image{
+        height: 200px;
+    }
+    .foot-1 ul li{
+        margin: 0 4px;
+        line-height: 20px;
+    }
+    .foot-1 ul{
+        margin: 20px 10px;
+    }
+    .foot-3  h5 p{
+        margin: 2px 2px;
+    }
+    .fa-facebook, .fa-twitter, .fa-google, .fa-rss, .fa-youtube{
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .big_div p{
+        font-size: 16px;
+    }
+}
