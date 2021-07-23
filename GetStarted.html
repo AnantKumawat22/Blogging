@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="GetstartedCSS.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="Index.html">Home</a>
+    </nav>
+    <div class="container">
+        <h1>Join Blogging</h1>
+        <h3>Create an account to personalize your homepage, follow your favorite authors and publications, applaud stories you love, and more.</h3>
+
+        <button class="loginBtn loginBtn--facebook" onclick="fbSignup()">Sign up with Facebook</button>
+        <button class="loginBtn loginBtn--google" data-toggle="modal" data-target="#exampleModal" onclick="googleSignup()">Sign up with Google</button>
+
+        <h3 style="margin: 40px auto 0px auto;">Already have an account?</h3>
+
+        <button class="loginBtn loginBtn--facebook" onclick="fbSignup()">Sign in</button>
+        <button class="loginBtn loginBtn--google" onclick="googleSignin()">Sign in</button>
+
+        <h3>To make Blogging work, we log user data and share it with service providers. Click “Sign up” above to accept Blogging’s Terms of Service & Privacy Policy.</h3>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+    <script>
+        var provider = new firebase.auth.GoogleAuthProvider();
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyDGloc5tZs9M2rZ0kQ9b2a7Kq74MsPgqMQ",
+            authDomain: "blogging-22.firebaseapp.com",
+            projectId: "blogging-22",
+            storageBucket: "blogging-22.appspot.com",
+            messagingSenderId: "754450589352",
+            appId: "1:754450589352:web:55a1c9c2eff07270fbc49d",
+            measurementId: "G-X9C3JPZ5T6"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="GetStartedJS.js"></script>
+</body>
+
+</html>
